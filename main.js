@@ -156,7 +156,7 @@ function losowanie() {
     max = Math.floor(tablica.length);
     let wynik = Math.floor(Math.random() * (max - min + 1)) + min - 1;
     if (tablica[wynik] != undefined) {
-        document.querySelector('h1').innerText = 'Wygrał'+tablica[wynik]
+        document.querySelector('h1').innerText = 'Wygrał '+tablica[wynik]
     }
     else {
         alert('Nic nie wybrałeś :|')
