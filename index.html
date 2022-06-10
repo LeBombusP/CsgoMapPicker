@@ -10,21 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-    <title>CSGO map chooser</title>
+    <title>CS:GO Map Picker</title>
 </head>
 <body>
-    <h1 class="display-1 align-middle">Wybierz mapy do losowania</h1>
-    <img src="img/premier.png" alt="Premier" id="Premier" onclick="Premier()">
-    <img src="img/mirage.png" alt="Mirage" id="Mirage" onclick="Mirage()">
-    <img src="img/inferno.png" alt="Inferno" id="Inferno" onclick="Inferno()">
-    <img src="img/overpass.png" alt="Overpass" id="Overpass" onclick="Overpass()">
-    <img src="img/vertigo.png" alt="Vertigo" id="Vertigo" onclick="Vertigo()"><br>
-    <img src="img/nuke.png" alt="Nuke" id="Nuke" onclick="Nuke()">
-    <img src="img/dust2.png" alt="Dust2" id="Dust2" onclick="Dust2()">
-    <img src="img/train.png" alt="Train" id="Train" onclick="Train()">
-    <img src="img/cache.png" alt="Cache" id="Cache" onclick="Cache()">
-    <img src="img/agency.png" alt="Agency" id="Agency" onclick="Agency()"><br><br>
+    <div>
+        <h1 class="display-2 align-middle">Select maps to play on</h1>
 
-    <button class="btn bg-primary " onclick="losowanie()">losuj</button>
+        <img src="img/premier.png" alt="Premier" id="Premier" onclick="Map('Premier')">
+        <img src="img/mirage.png" alt="Mirage" id="Mirage" onclick="Map('Mirage')">
+        <img src="img/inferno.png" alt="Inferno" id="Inferno" onclick="Map('Inferno')">
+        <img src="img/overpass.png" alt="Overpass" id="Overpass" onclick="Map('Overpass')">
+        <img src="img/vertigo.png" alt="Vertigo" id="Vertigo" onclick="Map('Vertigo')"><br>
+        <img src="img/nuke.png" alt="Nuke" id="Nuke" onclick="Map('Nuke')">
+        <img src="img/dust2.png" alt="Dust2" id="Dust2" onclick="Map('Dust2')">
+        <img src="img/train.png" alt="Train" id="Train" onclick="Map('Train')">
+        <img src="img/cache.png" alt="Cache" id="Cache" onclick="Map('Cache')">
+        <img src="img/agency.png" alt="Agency" id="Agency" onclick="Map('Agency')"><br><br>
+
+        <button class="btn bg-primary btn-lg" onclick="Choose()">Play</button>
+    </div>
 </body>
 </html>
